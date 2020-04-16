@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #3333ff;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+  font-family: impact;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 825px;
+  background: #ffcc00;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: courier;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 825px;
+  background-color: #8c8c8c;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #3333ff;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a:link {
+  color: green;
+  
+  }
+  
+  a:hover {
+  color: red;
+  }
+  
+  a:visited {
+  color: green;
+  }
+  
+  img {
+  max-height: 100%;
+  max-width: 100%;
+  }
+  
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Brad Paisley</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">About the Artist</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+      <li><img src="https://www.bradpaisley.com/assets/547c8f55/images/default.jpg"/></li>
+    </ul>
+  </nav>
+  
+  <article>
+ <img src="https://static.billboard.com/files/media/Brad-Paisley-press-photo-by-Jeff-Lipsky-2019-billboard-1548-1024x677.jpg"/>
+  <p>Brad Paisley is a 47 year old country singer and songwriter. Brad Paisley has a wife named Kimberley Williams and two sons named William and Jasper. He was born on October 28, 1972, in Glen Dale, West virginia. He graduated at John Marshall High school and had two years at West Liberty State College. His first song was Who Needs Pictures releases Febuary 22, 1999.</p>
+  <p>Brad recieved his first guitair from his grandfather at the age of eight. After Brad's two years at West Liberty he then transferred to Belmont University where he got a music buisness degree. Paisley's first number one hit on the country singles chart was "He didn't have to be". He was inducted into the Grand Ole Opry in 2001. In 2001 Brad also got nominated for a grammy for best new artist.</p>
+  <p>Paisley's fame started to really grow after the hit song "I'm gonna Miss Her". Brad had several famous artists feature in his songs such as Allison Krauss, Carrie Underwood, LL Cool J, Mick Jagger, Dolly Parton and more. Paisley's music was all unique he had serious songs such as "Whiskey Lullaby" and more fun songs such as "Alcohol". Brad so far has won three Grammys in his career with eighteen nominations. Brad was a pioneer in the country music world and carries a lot of influence and success in his career.</p>
+  </article>
+  
+</section>
+
+<footer>
+  <i>Copyright &copy; 2020. All Rights Reserved</i>
+</footer>
+
+</body>
+</html>

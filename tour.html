@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #3333ff;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+  font-family: impact;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1300px;
+  background: #ffcc00;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: courier;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 1300px;
+  background-color: #8c8c8c;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #3333ff;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a:link {
+  color: green;
+  
+  }
+  
+  a:hover {
+  color: red;
+  }
+  
+  a:visited {
+  color: green;
+  }
+  
+  img {
+  max-height: 100%;
+  max-width: 100%;
+  }
+  p {
+  color: black;
+  }
+  
+  ol {
+  color: black;
+  text-align: left;
+  }
+  
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Brad Paisley</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">About the Artist</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+      <li><img src="https://www.bradpaisley.com/assets/547c8f55/images/default.jpg"/></li>
+    </ul>
+  </nav>
+  
+  <article>
+ <h1 style="font-size:50px; color: black; border: 5px solid white;">Tour</h1>
+ <table align="center" style="color:black;">
+ <tr>
+ <td>5/15-Concord, CA-Concord Pavillion</td>
+ </tr>
+ <tr>
+ <td>5/16-Irvine, CA-FivePoint Ampitheatre</td>
+ </tr>
+ <tr>
+ <td>5/17-Chula Vista, CA-North Island Credit Union Amphitheatre</td>
+ </tr>
+ <tr>
+ <td>5/22-Ridgefield, WA-Sunlight Supply Ampitheatre</td>
+ </tr>
+ <tr>
+ <td>5/23- George, WA-Gorge Ampitheatre</td>
+ </tr>
+ <tr>
+ <td>5/28-Albuquerque, NM-Isleta Ampitheatre</td>
+ </tr>
+ <tr>
+ <td>5/29-Denver, CO-Pepsi Center</td>
+ </tr>
+ <tr>
+ <td>5/30-West Valley City, UT-USANA Ampitheatre</td>
+ </tr>
+ <tr>
+ <td>6/4-Clarkston, MI-DTE Energy Music Theatre</td>
+ </tr>
+ <tr>
+ <td>6/5-Tinley Park, IL-Hollywood Casino Ampitheatre</td>
+ </tr>
+ <tr>
+ <td>6/6-Maryland Heights, MO-Hollywood Casino Ampitheatre</td>
+ </tr>
+ <tr>
+ <td>6/12-Virginia Beach, VA-Veterans United Home Loans Ampitheatre</td>
+ </tr>
+ </table>
+  <h1 style="font-size:50px; color: black; border: 5px solid white;">Buy Tickets</h1>
+  <iframe src="https://www.ticketmaster.com" height="500" width="700"></iframe>
+  </article>
+  
+</section>
+
+<footer>
+  <i>Copyright &copy; 2020. All Rights Reserved</i>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #3333ff;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+  font-family: impact;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1600px;
+  background: #ffcc00;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: courier;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 1600px;
+  background-color: #8c8c8c;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #3333ff;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a:link {
+  color: green;
+  
+  }
+  
+  a:hover {
+  color: red;
+  }
+  
+  a:visited {
+  color: green;
+  }
+  
+  img {
+  max-height: 100%;
+  max-width: 100%;
+  }
+  p {
+  color: black;
+  }
+  
+  ol {
+  color: black;
+  text-align: left;
+  }
+  
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Brad Paisley</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">About the Artist</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+      <li><img src="https://www.bradpaisley.com/assets/547c8f55/images/default.jpg"/></li>
+    </ul>
+  </nav>
+  
+  <article>
+ <h1 style="font-size:50px; color: black; border: 5px solid white;">Top Albums</h1>
+ <table align="center">
+ <tr>
+ <td>Time Well Wasted</td>
+ <td><img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Time_Well_Wasted.jpg"/></td>
+ <td>
+ <ol>
+ <li>The World</li>
+ <li>Alcohol</li>
+ <li>Waitin' on a Woman</li>
+ <li>I'll Take You Back</li>
+ <li>She's Everything</li>
+ <li>You Need a Man Around Here</li>
+ <li>Out in the Parking Lot</li>
+ <li>Rainin' You</li>
+ <li>Flowers</li>
+ <li>Love is Never-Ending</li>
+ <li>The Uncloudy Day</li>
+ <li>When I get Where I'm Going</li>
+ <li>Easy Money</li>
+ <li>Time Warp</li>
+ <li>Time Well Wasted</li>
+ <li>Cornography</li>
+ <li>Out Take 1</li>
+ <li>Out Take 2</li>
+ <li>Out Take 3</li>
+ <li>Out Take 4</li>
+ <li>Shatner says Goodbye</li>
+ </ol>
+ </td>
+ </tr>
+ <tr>
+ <td>Part 2</td>
+ <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/PartII.jpg/220px-PartII.jpg"/></td>
+ <td>
+ <ol>
+ <li>Two Feet of Topsoil</li>
+ <li>I'm Gonna Miss Her</li>
+ <li>Part Two</li>
+ <li>Wrapped Around</li>
+ <li>Two People Fell in Love</li>
+ <li>Come on over Tonight</li>
+ <li>You'll Never Leave Harlin Alive</li>
+ <li>I wish You'd Stay</li>
+ <li>All You Really Need Is Love</li>
+ <li>Munster Rag-Instrumental</li>
+ <li>You Have That Effect On Me</li>
+ <li>Too Country</li>
+ <li>The Old Rugged Cross</li>
+ </ol>
+ </td>
+ </tr>
+ <tr>
+ <td>American Saturday Night</td>
+ <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/American_Saturday_Night.jpg/220px-American_Saturday_Night.jpg"/></td>
+ <td>
+ <ol>
+ <li>American Saturday Night</li>
+ <li>Everybody's Here</li>
+ <li>Welcome To The Future</li>
+ <li>Then</li>
+ <li>Water</li>
+ <li>She's Her Own Woman</li>
+ <li>Welcome To The Future-Reprise</li>
+ <li>Anything Like Me</li>
+ <li>You Do The Math</li>
+ <li>No</li>
+ <li>Catch All The Fish</li>
+ <li>Oh Yeah, You're Gone</li>
+ <li>The Pants</li>
+ <li>I Hope That's Me</li>
+ <li>Back To The Future</li>
+ </ol>
+ </td>
+ </tr>
+ </table>
+  
+  </article>
+  
+</section>
+
+<footer>
+  <i>Copyright &copy; 2020. All Rights Reserved</i>
+</footer>
+
+</body>
+</html>
